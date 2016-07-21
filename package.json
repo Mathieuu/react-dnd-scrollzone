@@ -1,46 +1,55 @@
 {
-  "name": "react-dnd-scrollzone",
-  "version": "1.1.0",
-  "description": "A cross browser solution to scrolling during drag and drop.",
-  "main": "lib/index.js",
-  "scripts": {
-    "build": "rm -rf lib && babel src --out-dir lib",
-    "lint": "eslint src",
-    "pretest": "npm run lint",
-    "test": "mocha test",
-    "prepublish": "in-publish && npm run test && npm run build || not-in-publish",
-    "publish:major": "npm version major && npm publish",
-    "publish:minor": "npm version minor && npm publish",
-    "publish:patch": "npm version patch && npm publish",
-    "postpublish": "git push origin master --tags"
+  "_args": [
+    [
+      "react-dnd-scrollzone",
+      "/Users/savymathieu/work/zenhub/extension/packages/chrome/js/components"
+    ]
+  ],
+  "_from": "react-dnd-scrollzone@latest",
+  "_id": "react-dnd-scrollzone@1.1.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/react-dnd-scrollzone",
+  "_nodeVersion": "0.12.5",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-dnd-scrollzone-1.1.0.tgz_1466098172896_0.6145776824560016"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/azuqua/react-dnd-scrollzone"
+  "_npmUser": {
+    "email": "nickclaw@gmail.com",
+    "name": "nickclaw"
+  },
+  "_npmVersion": "2.11.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "react-dnd-scrollzone",
+    "raw": "react-dnd-scrollzone",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-dnd-scrollzone/-/react-dnd-scrollzone-1.1.0.tgz",
+  "_shasum": "32315c94a6847c54e21e24657dc877edf4ac3b16",
+  "_shrinkwrap": null,
+  "_spec": "react-dnd-scrollzone",
+  "_where": "/Users/savymathieu/work/zenhub/extension/packages/chrome/js/components",
+  "author": {
+    "email": "nickclaw@gmail.com",
+    "name": "Nicholas Clawson",
+    "url": "nickclaw.com"
   },
   "bugs": {
     "url": "http://github.com/azuqua/react-dnd-scrollzone/issues"
   },
-  "keywords": [
-    "react",
-    "drag",
-    "drop",
-    "scroll",
-    "dnd",
-    "drag and drop",
-    "polyfill",
-    "auto"
-  ],
-  "author": {
-    "name": "Nicholas Clawson",
-    "email": "nickclaw@gmail.com",
-    "url": "nickclaw.com"
-  },
-  "license": "MIT",
   "dependencies": {
     "lodash.throttle": "^4.0.1",
     "raf": "^3.2.0"
   },
+  "description": "A cross browser solution to scrolling during drag and drop.",
   "devDependencies": {
     "babel-cli": "^6.4.5",
     "babel-eslint": "^6.0.4",
@@ -59,5 +68,49 @@
     "react": "^15.1.0",
     "sinon": "^1.17.2",
     "sinon-chai": "^2.8.0"
-  }
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "32315c94a6847c54e21e24657dc877edf4ac3b16",
+    "tarball": "https://registry.npmjs.org/react-dnd-scrollzone/-/react-dnd-scrollzone-1.1.0.tgz"
+  },
+  "gitHead": "3d9baacad9123c40001d6cde3ae8a24fb5e23081",
+  "homepage": "https://github.com/azuqua/react-dnd-scrollzone#readme",
+  "keywords": [
+    "auto",
+    "dnd",
+    "drag",
+    "drag and drop",
+    "drop",
+    "polyfill",
+    "react",
+    "scroll"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "nickclaw",
+      "email": "nickclaw@gmail.com"
+    }
+  ],
+  "name": "react-dnd-scrollzone",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azuqua/react-dnd-scrollzone.git"
+  },
+  "scripts": {
+    "build": "rm -rf lib && babel src --out-dir lib",
+    "lint": "eslint src",
+    "postpublish": "git push origin master --tags",
+    "prepublish": "in-publish && npm run test && npm run build || not-in-publish",
+    "pretest": "npm run lint",
+    "publish:major": "npm version major && npm publish",
+    "publish:minor": "npm version minor && npm publish",
+    "publish:patch": "npm version patch && npm publish",
+    "test": "mocha test"
+  },
+  "version": "1.1.0"
 }
